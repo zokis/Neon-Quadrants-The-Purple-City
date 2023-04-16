@@ -1,0 +1,147 @@
+body {
+    background-color: #161616;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-image: url('static/bg.svg');*/
+}
+canvas {
+    display: block;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.players {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.player, .robot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 25px;
+}
+.player img, .robot img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #e70aff, 0px 0px 5px #e70aff;
+}
+.score {
+    margin-top: 20px;
+    margin-left: 15px;
+    text-align: center;
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+p {
+    font-size: 18px;
+    margin: 0;
+}
+.player {
+    border-bottom: 5px solid #11a6d3;
+}
+.robot {
+    border-bottom: 5px solid #7a00cc;
+}
+#battleground {
+    width: 1024px;
+    height: 668px;
+    border: 2px solid #e70aff;
+    margin-top: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #e70aff;
+    background-image: url("static/loading.png");
+    background-size: cover;
+    background-position: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.square {
+    width: 65px;
+    height: 65px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+.square:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+.vertical-line {
+    width: 8px;
+    height: 65px;
+    background-color: rgba(252, 3, 244, 0.5);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+.vertical-line:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+.horizontal-line {
+    width: 65px;
+    height: 8px;
+    background-color: rgba(252, 3, 244, 0.5);
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    margin: 0;
+    padding: 0;
+}
+.horizontal-line:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+#battleground-table {
+    border-collapse: collapse;
+    align-self: center;
+}
+.td-clicked0 {
+    background-color: #11a6d3;
+}
+.td-clicked0:hover {
+    background-color: #58cff3;
+}
+.td-clicked1 {
+    background-color: #7A00CC;
+}
+.td-clicked1:hover {
+    background-color: #8A00CC;
+}
+.td-clicked2 {
+    background-color: #4D3B94;
+}
+.td-clicked2:hover {
+    background-color: #5A3BA6;
+}
+.td-clicked3 {
+    background-color: #7D2E9E;
+}
+.td-clicked3:hover {
+    background-color: #9D4E9A;
+}
+.intersection {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(252, 3, 244, 0.5);
+}
+.intersection:hover {
+    background-color: rgba(252, 3, 244, 0.5);
+}

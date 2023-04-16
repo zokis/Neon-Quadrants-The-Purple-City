@@ -1,0 +1,249 @@
+<svg
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      style="margin:auto;background:#020e1a;display:block;z-index:1;position:relative"
+      width="512"
+      height="512"
+      preserveAspectRatio="xMidYMid"
+      viewBox="0 0 512 512">
+  <defs>
+    <pattern id="iop-z" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <g transform="scale(0.8)">
+        <path d="M 1 1 L 50.2 1 L 50.2 50.2 L 1 50.2 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.9634748063929541s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 1 52.2 L 50.2 52.2 L 50.2 101.4 L 1 101.4 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.44332621915421s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 1 103.4 L 50.2 103.4 L 50.2 152.60000000000002 L 1 152.60000000000002 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.4913561319825854s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+<!--         <path d="M 1 154.60000000000002 L 50.2 154.60000000000002 L 50.2 203.8 L 1 203.8 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.6008321583296369s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 1 205.8 L 50.2 205.8 L 50.2 255 L 1 255 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.766301778813191s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 52.2 1 L 101.4 1 L 101.4 50.2 L 52.2 50.2 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.003779218838749289s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 52.2 52.2 L 101.4 52.2 L 101.4 101.4 L 52.2 101.4 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.2990756326896393s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 52.2 103.4 L 101.4 103.4 L 101.4 152.60000000000002 L 52.2 152.60000000000002 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.7891745813698796s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 52.2 154.60000000000002 L 101.4 154.60000000000002 L 101.4 203.8 L 52.2 203.8 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.5992957616231352s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 52.2 205.8 L 101.4 205.8 L 101.4 255 L 52.2 255 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.2618654760356736s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 103.4 1 L 152.60000000000002 1 L 152.60000000000002 50.2 L 103.4 50.2 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.9918360445031984s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 103.4 52.2 L 152.60000000000002 52.2 L 152.60000000000002 101.4 L 103.4 101.4 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.4678964345922704s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path
+              d="M 103.4 103.4 L 152.60000000000002 103.4 L 152.60000000000002 152.60000000000002 L 103.4 152.60000000000002 Z"
+              fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.10031578796054355s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path
+              d="M 103.4 154.60000000000002 L 152.60000000000002 154.60000000000002 L 152.60000000000002 203.8 L 103.4 203.8 Z"
+              fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.21788859306644118s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 103.4 205.8 L 152.60000000000002 205.8 L 152.60000000000002 255 L 103.4 255 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.3335481377356975s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 154.60000000000002 1 L 203.8 1 L 203.8 50.2 L 154.60000000000002 50.2 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.6141011807927685s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 154.60000000000002 52.2 L 203.8 52.2 L 203.8 101.4 L 154.60000000000002 101.4 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.0928613625892618s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path
+              d="M 154.60000000000002 103.4 L 203.8 103.4 L 203.8 152.60000000000002 L 154.60000000000002 152.60000000000002 Z"
+              fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.4387029626075716s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path
+              d="M 154.60000000000002 154.60000000000002 L 203.8 154.60000000000002 L 203.8 203.8 L 154.60000000000002 203.8 Z"
+              fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.8831572354479069s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 154.60000000000002 205.8 L 203.8 205.8 L 203.8 255 L 154.60000000000002 255 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.4548328455127375s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 205.8 1 L 255 1 L 255 50.2 L 205.8 50.2 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.37042052118830804s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 205.8 52.2 L 255 52.2 L 255 101.4 L 205.8 101.4 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.0876952541965452s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 205.8 103.4 L 255 103.4 L 255 152.60000000000002 L 205.8 152.60000000000002 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-0.3073661916364594s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 205.8 154.60000000000002 L 255 154.60000000000002 L 255 203.8 L 205.8 203.8 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.991858613833957s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+        <path d="M 205.8 205.8 L 255 205.8 L 255 255 L 205.8 255 Z" fill="#210336">
+          <animate
+                attributeName="fill"
+                begin="-1.1003969478253546s"
+                values="#210336;#1c0a24;#210336"
+                keyTimes="0;0.5;1"
+                dur="2.0408163265306123s"
+                repeatCount="indefinite"></animate>
+        </path>
+ -->      </g>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" fill="url(#iop-z)"></rect>
+</svg>
