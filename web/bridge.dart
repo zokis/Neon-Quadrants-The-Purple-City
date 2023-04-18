@@ -92,14 +92,20 @@ class Bridge {
                 span.text = "${p.score}";
             }
         }
-        final Element player1Html = querySelector('#player1') as Element;
-        final Element player2Html = querySelector('#player2') as Element;
+        Element player1Html = querySelector('#player1') as Element;
+        Element player2Html = querySelector('#player2') as Element;
+        Element player1img = querySelector('.player1') as Element;
+        Element player2img = querySelector('.player2') as Element;
         if (_game.currentPlayerIndex == 0){
-            player1Html.classes = ["red"];
+            player1Html.classes = ["red", "blink", "rotate-scale-up"];
             player2Html.classes = ["white"];
+            player1img.classes = ["player1", "rotate-scale-up"];
+            player2img.classes = ["player2"];
         } else {
-            player2Html.classes = ["red"];
+            player2Html.classes = ["red", "blink", "rotate-scale-up"];
             player1Html.classes = ["white"];
+            player1img.classes = ["player1"];
+            player2img.classes = ["player2", "rotate-scale-up"];
         }
     }
 

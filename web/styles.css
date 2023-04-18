@@ -153,3 +153,39 @@ p {
 .intersection:hover {
     background-color: rgba(252, 3, 244, 0.5);
 }
+
+
+h2.blink {
+  animation: blink 2s infinite;
+}
+
+
+@keyframes blink {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  25% {
+    text-shadow: 0 0 10px rgba(241, 82, 84, .35);
+  }
+  50% {
+    text-shadow: 0 0 12px rgba(241, 82, 84, .75);
+  }
+  100% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.rotate-scale-up {
+    animation: rotate-scale-up 0.65s cubic-bezier(0.470, 0.000, 0.745, 0.715) reverse both;
+}
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(1.25) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
