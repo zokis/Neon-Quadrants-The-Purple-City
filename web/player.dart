@@ -8,7 +8,7 @@ class Player {
 
   // Constructor initializing a player with a name
   Player(String name) {
-    this.identifier = generateRandomString();
     this.name = name;
+    this.identifier = generateRandomString();
   }
 }

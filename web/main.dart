@@ -13,7 +13,12 @@ void main() {
   final TableElement table = querySelector('#battleground-table') as TableElement;
   final DivElement battleground = querySelector('#battleground') as DivElement;
   final DivElement loading = querySelector('#loading-screen') as DivElement;
-  final Game g = Game([Player('human'), Player('computer 1')], 8, 8);
+  final Game g = Game([Player('human'), Player('computer 1')], 8, 13);
+  final Element player1Html = querySelector('#player1') as Element;
+  final Element player2Html = querySelector('#player2') as Element;
+
+  player1Html.text = g.players[0].name;
+  player2Html.text = g.players[1].name;
 
   // Printing the matrix
   List<List<Square>> matrix = g.grid.matrix;
@@ -27,7 +32,7 @@ void main() {
       print('');
     }
   }
-  
+
   final Bridge bridge = Bridge(table, g);
   bridge.renderGridHTML();
 

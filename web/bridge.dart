@@ -86,9 +86,20 @@ class Bridge {
         List<Square> qs = _game.playTurn(translated[0], translated[1], l);
         for (final q in qs) {
             TableCellElement? tdSquare = squareMap[q.name]?['td'] as TableCellElement;
-            if (tdSquare != null && q.player != null){
-                tdSquare.text = q.player?.name;
+            if (tdSquare != null){
+                tdSquare.text = p.name;
+                SpanElement span = querySelector("#score-player${_game.currentPlayerIndex+1}") as SpanElement;
+                span.text = "${p.score}";
             }
+        }
+        final Element player1Html = querySelector('#player1') as Element;
+        final Element player2Html = querySelector('#player2') as Element;
+        if (_game.currentPlayerIndex == 0){
+            player1Html.classes = ["red"];
+            player2Html.classes = ["white"];
+        } else {
+            player2Html.classes = ["red"];
+            player1Html.classes = ["white"];
         }
     }
 

@@ -10,6 +10,13 @@ body {
 canvas {
     display: block;
 }
+.red {
+    color: #8a1234;
+}
+
+.white {
+    color: #BBB;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -22,13 +29,19 @@ canvas {
     align-items: center;
     margin-top: 25px;
 }
-.player, .robot {
+.player1 {
+    border-bottom: 5px solid #11a6d3;
+}
+.player2 {
+    border-bottom: 5px solid #7a00cc;
+}
+.player1, .player2 {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 10px 25px;
 }
-.player img, .robot img {
+.player1 img, .player2 img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -47,12 +60,7 @@ p {
     font-size: 18px;
     margin: 0;
 }
-.player {
-    border-bottom: 5px solid #11a6d3;
-}
-.robot {
-    border-bottom: 5px solid #7a00cc;
-}
+
 #battleground {
     width: 1024px;
     height: 668px;
