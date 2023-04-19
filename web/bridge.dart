@@ -81,32 +81,27 @@ class Bridge {
         }
         Player p = _game.getCurrentPlayer();
         List<int> translated = translateLineXYtoSquareXY(dX, dY);
-
         tdLine.classes.add('td-clicked${_game.currentPlayerIndex}');
         List<Square> qs = _game.playTurn(translated[0], translated[1], l);
+        int cP = _game.currentPlayerIndex;
         for (final q in qs) {
             TableCellElement? tdSquare = squareMap[q.name]?['td'] as TableCellElement;
             if (tdSquare != null){
-                tdSquare.text = p.name;
-                SpanElement span = querySelector("#score-player${_game.currentPlayerIndex+1}") as SpanElement;
+                tdSquare.text = p.name[0];
+                tdSquare.classes = ["square", "square-c${cP}"];
+                SpanElement span = querySelector("#score-player${cP+1}") as SpanElement;
                 span.text = "${p.score}";
             }
         }
-        Element player1Html = querySelector('#player1') as Element;
-        Element player2Html = querySelector('#player2') as Element;
-        Element player1img = querySelector('.player1') as Element;
-        Element player2img = querySelector('.player2') as Element;
-        if (_game.currentPlayerIndex == 0){
-            player1Html.classes = ["red", "blink", "rotate-scale-up"];
-            player2Html.classes = ["white"];
-            player1img.classes = ["player1", "rotate-scale-up"];
-            player2img.classes = ["player2"];
-        } else {
-            player2Html.classes = ["red", "blink", "rotate-scale-up"];
-            player1Html.classes = ["white"];
-            player1img.classes = ["player1"];
-            player2img.classes = ["player2", "rotate-scale-up"];
-        }
+
+        _game.players.asMap().forEach((int i, Player p){
+            Element playerHtml = querySelector('#player${i+1}') as Element;
+            if (cP == i){
+                playerHtml.classes = ["red", "blink"];
+            } else {
+                playerHtml.classes = ["white"];
+            }
+        });
     }
 
     void lineHorizontalCallback(MouseEvent me){
@@ -144,7 +139,7 @@ class Bridge {
       final TableCellElement td = TableCellElement();
       td.classes = ['square'];
       String sqName = getSquareName();
-      td.text = sqName;
+      // td.text = sqName;
       td.setAttribute("data-y", y);
       td.setAttribute("data-x", x);
       squareMap[sqName] = new Map<String, dynamic>();
