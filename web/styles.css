@@ -86,15 +86,12 @@ p {
     transition: background-color 0.5s ease;
     margin: 0;
     padding: 0;
-}
-.square:hover {
-    background-color: lightgray;
-    cursor: pointer;
+    text-align: center;
 }
 .vertical-line {
     width: 8px;
     height: 65px;
-    background-color: rgba(252, 3, 244, 0.5);
+    background-color: rgba(222, 222, 222, 0.67);
     cursor: pointer;
     transition: background-color 0.5s ease;
     margin: 0;
@@ -107,7 +104,7 @@ p {
 .horizontal-line {
     width: 65px;
     height: 8px;
-    background-color: rgba(252, 3, 244, 0.5);
+    background-color: rgba(222, 222, 222, 0.67);
     cursor: pointer;
     transition: background-color 0.5s ease;
     margin: 0;
@@ -148,10 +145,7 @@ p {
 .intersection {
     width: 8px;
     height: 8px;
-    background-color: rgba(252, 3, 244, 0.5);
-}
-.intersection:hover {
-    background-color: rgba(252, 3, 244, 0.5);
+    background-color: rgba(3, 3, 3, 0.9);
 }
 
 
@@ -188,4 +182,30 @@ h2.blink {
   100% {
     transform: scale(1) rotateZ(360deg);
   }
+}
+
+
+.square-c0 {
+    background-color: rgba(15, 165, 215, 0.65);
+}
+.square-c0:hover {
+    background-color: rgba(85, 205, 245, 0.65);
+}
+.square-c1 {
+    background-color: rgba(125, 0, 205, 0.65);
+}
+.square-c1:hover {
+    background-color: rgba(135, 0, 205, 0.65);
+}
+.square-c2 {
+    background-color: #4D3B94;
+}
+.square-c2:hover {
+    background-color: #5A3BA6;
+}
+.square-c3 {
+    background-color: #7D2E9E;
+}
+.square-c3:hover {
+    background-color: #9D4E9A;
 }
