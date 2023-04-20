@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon Quadrants The Purple City</title>
+    <title>Neon Quadrants - The Purple City</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.dart.js"></script>
   </head>
@@ -60,6 +60,19 @@
       </div>
     </div>
     <canvas id="canvas"></canvas>
+
+    <section id="modalGameOver" class="modal hidden">
+      <div class="flex">
+        <h3>Game Over</h3>
+        <div>
+          <p>Player 1 won!</p>
+          <p>Points: 10x0</p>
+        </div>
+      </div>
+      <button id="playAgain" class="btn">Play again</button>
+    </section>
+
+    <div id="overlay" class="overlay hidden"></div>
     <script src="static/bg.js"></script>
   </body>
 </html>

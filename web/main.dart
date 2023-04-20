@@ -17,7 +17,7 @@ Game gameUriFactory(){
     final List<Player> players = playersList.map((playerData) => Player(playerData['name'] as String)).toList();
     return Game(players, gameMap["grid"][0] as int, gameMap["grid"][1] as int);
   }
-  return Game([Player('human'), Player('computer 1')], 8, 13);
+  return Game([Player('human'), Player('computer 1')], 4, 4);
 }
 
 
@@ -54,7 +54,6 @@ void main() {
   table.animate([{"opacity": 0}, {"opacity": 100}], 800);
   table.style.setProperty("opacity", "100");
 
-
   print(encodeZ({
     "grid": [8, 8],
     "players": [
@@ -63,7 +62,7 @@ void main() {
         "d": 0
       },
       {
-        "name": "Robot",
+        "name": "Marília",
         "d": 1
       }
     ]
